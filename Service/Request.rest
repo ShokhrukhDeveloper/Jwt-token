@@ -1,0 +1,5 @@
+POST https://localhost:7086/api/Home?userName=admin&password=admin HTTP/1.1
+
+###
+GET https://hocalhost:7086/api/Home HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoibm9yIiwidXNlcm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkIjoiYWRtaW4iLCJkb2IiOiI5LzExLzE5OTcgOTo1MDo1NiBBTSIsImV4cCI6MTY2Mjg3Nzg1NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzA4NiIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjcwODYifQ.r0alLYBeBh_7qSR9tk9PGaTzI_eXyafkfeuvTXNCTxw

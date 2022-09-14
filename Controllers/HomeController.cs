@@ -1,4 +1,5 @@
 using Jwt.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Jwt.Controller;
@@ -28,6 +29,9 @@ public class HomeController:ControllerBase
 
         return Forbid();
     }
+    [Authorize]
+    [HttpGet]
+    public IActionResult secret()=>Ok("ok");
     
 
 }

@@ -24,7 +24,7 @@ public class JwtTokenService : ITokenService
         issuer,
         audience,
         calimsJwt,
-        expires:DateTime.Now.AddMinutes(1),
+        expires:DateTime.Now.AddMinutes(100),
         signingCredentials:credential
        );
        return new JwtSecurityTokenHandler().WriteToken(token);
@@ -55,7 +55,7 @@ public class JwtTokenService : ITokenService
             },out SecurityToken validatedToken
             );
             return true;
-        }catch(Exception e){
+        }catch(Exception){
           return false;  
         }
         
